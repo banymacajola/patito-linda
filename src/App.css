@@ -649,35 +649,78 @@
 }
 
 @media (max-width: 560px) {
+  .page {
+    gap: 12px;
+    padding: 18px 12px;
+  }
+
+  .love-book {
+    width: calc(100vw - 24px);
+  }
+
   .love-book--spread {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 24px);
+    border-radius: 24px;
+  }
+
+  .love-book--spread .book-spine,
+  .book-spread::after,
+  .book-leaf--left {
+    display: none;
+  }
+
+  .book-spread {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .book-page {
-    padding-right: 14px;
-    padding-left: 14px;
+    padding: 20px 14px;
   }
 
   .book-leaf {
-    padding: 10px 6px;
+    padding: 14px 12px;
+    border: 1px solid #e8adc7;
+    border-radius: 22px;
   }
 
   .book-leaf .reason-content {
-    padding: 18px 8px;
+    padding: 24px 16px;
+  }
+
+  .book-leaf .reason-content h1,
+  .book-leaf .reason-content h2 {
+    font-size: clamp(1.25rem, 5vw, 1.55rem);
+  }
+
+  .book-leaf .reason-text {
+    font-size: clamp(1.05rem, 4.5vw, 1.3rem);
+  }
+
+  .page-flip--next {
+    left: 0;
+  }
+
+  .page-flip--previous {
+    right: 0;
+  }
+
+  .page-flip-face,
+  .page-flip--previous .page-flip-face {
+    border-radius: 22px;
   }
 
   .page-actions {
-    gap: 4px;
+    gap: 6px;
   }
 
   .page-actions .book-button {
-    padding-right: 12px;
-    padding-left: 12px;
-    font-size: 0.8rem;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 0.85rem;
   }
 
   .page-actions .text-button {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 }
 
