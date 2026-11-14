@@ -658,8 +658,21 @@
     width: calc(100vw - 24px);
   }
 
+  .book-spine {
+    width: 12px;
+  }
+
+  .book-cover {
+    inset: 0 0 0 12px;
+  }
+
   .love-book--spread {
     width: calc(100vw - 24px);
+    border-radius: 24px;
+  }
+
+  .love-book--spread .book-page {
+    border-left: 0;
     border-radius: 24px;
   }
 
@@ -674,17 +687,22 @@
   }
 
   .book-page {
-    padding: 20px 14px;
+    padding: 24px 18px;
   }
 
   .book-leaf {
-    padding: 14px 12px;
+    padding: 18px 16px;
     border: 1px solid #e8adc7;
     border-radius: 22px;
   }
 
+  .book-spread {
+    margin-bottom: 22px;
+  }
+
   .book-leaf .reason-content {
-    padding: 24px 16px;
+    margin: 20px 0;
+    padding: 30px 20px;
   }
 
   .book-leaf .reason-content h1,
@@ -692,7 +710,12 @@
     font-size: clamp(1.25rem, 5vw, 1.55rem);
   }
 
+  .book-leaf .reason-flower {
+    margin: 24px 0 12px;
+  }
+
   .book-leaf .reason-text {
+    margin: 22px 0;
     font-size: clamp(1.05rem, 4.5vw, 1.3rem);
   }
 
@@ -710,13 +733,37 @@
   }
 
   .page-actions {
-    gap: 6px;
+    display: grid;
+    grid-template-areas:
+      "previous next"
+      "cover cover";
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .page-actions .text-button:first-child {
+    grid-area: previous;
+  }
+
+  .page-actions .text-button:nth-child(2) {
+    grid-area: cover;
   }
 
   .page-actions .book-button {
-    padding-right: 14px;
-    padding-left: 14px;
-    font-size: 0.85rem;
+    grid-area: next;
+  }
+
+  .page-actions .text-button {
+    min-height: 42px;
+    border-radius: 18px;
+    background: #ffeaf2;
+  }
+
+  .page-actions .book-button {
+    min-height: 42px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 0.8rem;
   }
 
   .page-actions .text-button {
