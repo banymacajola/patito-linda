@@ -3,13 +3,30 @@ import './App.css';
 
 const reasons = [
   'Porque haces que hasta los días normales se sientan especiales.',
-  'Porque siempre me sacas una sonrisa.',
+  'Porque sabes hacerme sonreír y reír, hasta en los momentos más inesperados.',
   'Porque a tu lado, cualquier lugar se siente como hogar.',
   'Porque me inspiras a ser mi mejor versión, sin dejar de ser yo.',
   'Siempre puedo hablar contigo.',
   'Las noches contigo siempre son especiales.',
   'Eres hermosa y única; no quisiera perderte.',
   'Sos re linda y especial con todos.',
+  'Porque, pase lo que pase, siempre estás ahí para tomarme de la mano.',
+  'Porque sabes escucharme y comprenderme hasta en mis días difíciles.',
+  'Porque a tu lado encuentro mi lugar seguro y la calma que necesito.',
+  'Porque llenas de amor hasta los gestos más pequeños.',
+  'Porque siempre eres tú misma, auténtica y única.',
+  'Porque la luz de tu alma ilumina cualquier lugar.',
+  'Porque a veces nos entendemos con solo una mirada.',
+  'Porque tu voz calma cualquier tormenta dentro de mí.',
+  'Porque en tus abrazos siento que todo está bien.',
+  'Porque tus sueños y metas me inspiran a luchar por los míos.',
+  'Porque recuerdas esas pequeñas cosas que te cuento y las haces importantes.',
+  'Porque admiro tu valentía y cómo enfrentas cada reto.',
+  'Porque a tu lado me siento afortunado y valorado.',
+  'Porque me quieres con mis virtudes, defectos e imperfecciones.',
+  'Porque cuando imagino el futuro, siempre te veo a mi lado.',
+  'Porque sabes perdonar y resolver las cosas con amor.',
+  'Porque mi corazón te elige simplemente por ser tú.',
 ];
 
 function App() {
