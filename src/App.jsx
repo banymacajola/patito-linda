@@ -163,7 +163,7 @@ function App() {
             <div className="cover-decoration">
               <img
                 className="cover-image"
-                src="/panda-heart.jpg"
+                src={`${import.meta.env.BASE_URL}panda-heart.jpg`}
                 alt="Panda abrazando un corazón"
               />
               <span className="cover-sparkle cover-sparkle--left" aria-hidden="true">✦</span>
