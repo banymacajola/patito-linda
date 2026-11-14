@@ -650,12 +650,16 @@
 
 @media (max-width: 560px) {
   .page {
+    box-sizing: border-box;
     gap: 12px;
-    padding: 18px 12px;
+    padding: 18px 16px;
   }
 
   .love-book {
-    width: calc(100vw - 24px);
+    box-sizing: border-box;
+    width: min(calc(100vw - 32px), 380px);
+    min-height: min(570px, calc(100dvh - 120px));
+    padding-left: 12px;
   }
 
   .book-spine {
@@ -667,7 +671,7 @@
   }
 
   .love-book--spread {
-    width: calc(100vw - 24px);
+    width: min(calc(100vw - 32px), 380px);
     border-radius: 24px;
   }
 
